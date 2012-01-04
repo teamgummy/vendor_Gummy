@@ -1,5 +1,5 @@
-add_lunch_combo Gummy_toro-eng
-add_lunch_combo Gummy_maguro-eng
-add_lunch_combo Gummy_crespo-eng
-add_lunch_combo Gummy_crespo4g-eng
-add_lunch_combo Gummy_wingray-eng
+add_lunch_combo Gummy_toro-userdebug
+add_lunch_combo Gummy_maguro-userdebug
+add_lunch_combo Gummy_crespo-userdebug
+add_lunch_combo Gummy_crespo4g-userdebug
+add_lunch_combo Gummy_wingray-userdebug
