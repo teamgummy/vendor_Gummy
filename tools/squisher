@@ -58,32 +58,6 @@ find ./ -name \*.apk | $XARGS $OPTICHARGER
 # Relocate su
 mv $REPACK/ota/system/xbin/su $REPACK/ota/system/bin/su
 
-
-if [ "$WANT_SQUASHFS" -eq 1 ]; then
-	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
-	updater=$REPACK/ota/META-INF/com/google/android/updater-script
-
-
-
-	# Create symlinks for su and busybox (since updater-script can't work on the squashfs filesystem).
-	# Forgive me for the regex hell here. 
-	ln -s ../bin/su $REPACK/_xbin/su
-	for link in `sed -n -e's/,//g' -e'/symlink(.*busybox/,/xbin.*);/p' $updater | tr '"' '\n' | sed -n -e'\,/system/xbin/,s,/system/xbin/,,p'`
-	do
-		ln -s busybox $REPACK/_xbin/$link
-	done
-
-	# Create the squashfs with new and improved symlinkage!
-	mksquashfs $REPACK/_xbin/* $REPACK/_xbin.sqf $squash_opts
-	rm -rf $REPACK/ota/system/xbin/*
-	mv $REPACK/_xbin.sqf $REPACK/ota/system/xbin/xbin.sqf
-	chmod 444 $REPACK/ota/system/xbin/xbin.sqf
-
-	# Remove xbin stuff and fix up updater-script
-	$SED -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
-fi
-
-
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
 
