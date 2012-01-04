@@ -53,7 +53,9 @@ PRODUCT_COPY_FILES += \
 # Cron schedual 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/Gummy/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
     vendor/Gummy/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/Gummy/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
     vendor/Gummy/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
     vendor/Gummy/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
     vendor/Gummy/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
@@ -73,6 +75,17 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
     vendor/Gummy/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown
+
+# Adding files needed for extra camera features
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/Gummy/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/Gummy/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
+    vendor/Gummy/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
+    vendor/Gummy/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
+    vendor/Gummy/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
+    vendor/Gummy/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
+    vendor/Gummy/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
 
 # Added xbin files
 PRODUCT_COPY_FILES += \

@@ -7,7 +7,12 @@ PRODUCT_BRAND := google
 PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_ID=ICL53F BUILD_DISPLAY_ID=IML74K BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=mysid \
+    BUILD_DISPLAY_ID=Gummy-TORO \
+    BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys" \
+    PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
