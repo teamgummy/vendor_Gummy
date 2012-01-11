@@ -10,10 +10,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES := \
     Camera \
     Gallery \
+    SoundRecorder \
     FileManager \
     LibertySettings \
-    HoloSpiralWallpaper \
-    LibertyLauncher 
+    LibertyLauncher \
+    Superuser \
+    Superuser.apk \
+    su
 
 
 # Wallpapers
