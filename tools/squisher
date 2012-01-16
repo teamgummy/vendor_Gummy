@@ -72,6 +72,8 @@ rm -rf $REPACK/ota/system/app/*.old
 
 # remove send_bug.jar 
 rm -rf $REPACK/ota/system/framework/send_bug.jar
+rm -rf $REPACK/ota/system/app/Provision.apk
+rm -rf $REPACK/ota/system/app/WAPPushManager.apk
 
 
 # Strip modules
