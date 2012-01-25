@@ -12,7 +12,8 @@ PRODUCT_PACKAGES := \
     Gallery \
     SoundRecorder \
     FileManager \
-    LibertyLauncher \
+    LibertySettings \
+    Trebuchet \
     Superuser \
     Superuser.apk \
     su
