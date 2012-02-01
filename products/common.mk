@@ -13,7 +13,6 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     FileManager \
     LibertySettings \
-    Trebuchet \
     Superuser \
     Superuser.apk \
     su
@@ -30,6 +29,13 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     Gummypapers \
     Galaxy4 
+
+#CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
+PRODUCT_PACKAGES += \
+    Trebuchet \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
 
 # init.d support
 PRODUCT_COPY_FILES += \
