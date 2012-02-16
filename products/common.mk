@@ -80,6 +80,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/Gummy/proprietary/Term.apk:system/app/Term.apk \
     vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so 
 
+# LatinIME Dicktonary binarry
+PRODUCT_COPY_FILES +=  \
+    vendor/Gummy/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk
+
 # Term info for nano support
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \
