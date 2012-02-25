@@ -100,7 +100,7 @@ mv $REPACK/ota/system/app/TargaProgramMenuSystem.apk $REPACK/ota/system/app/Prog
 
 # Determine what to name the new signed package
 REALDATE=`date +%F-%H_%M`
-OUTFILE=$OUT/$TARGET_PRODUCT-Release-$REALDATE.zip
+OUTFILE=$OUT/$TARGET_PRODUCT-squashed-$REALDATE.zip
 
 # Pack it up and sign
 printf "Zipping package..."
