@@ -94,8 +94,6 @@ rm -rf $REPACK/ota/system/app/WAPPushManager.apk
 
 # Copy libvoicesearch as it's getting messed up in the build
 cp -f $ANDROID_BUILD_TOP/device/motorola/targa/prebuilt/lib/libvoicesearch.so $REPACK/ota/system/lib/libvoicesearch.so
-mv $REPACK/ota/system/app/TargaProgramMenu.apk $REPACK/ota/system/app/ProgramMenu.apk
-mv $REPACK/ota/system/app/TargaProgramMenuSystem.apk $REPACK/ota/system/app/ProgramMenuSystem.apk
 
 
 # Determine what to name the new signed package
