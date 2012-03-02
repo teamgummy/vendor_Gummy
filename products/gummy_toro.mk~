@@ -29,7 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-TORO \
+    ro.goo.rom=Gummy-Toro \
     ro.goo.version=0.8.3
 
 PRODUCT_COPY_FILES += \
