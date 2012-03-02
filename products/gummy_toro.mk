@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamGummy \
     ro.goo.rom=Gummy-TORO \
-    ro.goo.version=0.8.3
+    ro.goo.version=0.8.0
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \

@@ -22,7 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     drm.service.enabled=true \
     camera.flash_off=0 \
-    dalvik.vm.lockprof.threshold=500 
+    dalvik.vm.lockprof.threshold=500 \
+    ro.goo.developerid=TeamGummy \
+    ro.goo.rom=Gummy-MAGURO \
+    ro.goo.version=0.8.0 
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
