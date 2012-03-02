@@ -21,6 +21,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/targa
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/lte
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led_no_softkeys
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
 
 
