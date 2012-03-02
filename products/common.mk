@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \
-    Trebuchet \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
@@ -52,7 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
     vendor/Gummy/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk
 
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
