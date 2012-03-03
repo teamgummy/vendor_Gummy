@@ -116,7 +116,7 @@
     <bool name="config_mms_content_disposition_support">false</bool>
 
     <!-- Adding default wallpaper - Kejar31 -->
-    <string name="default_wallpaper_component">@null</string>
+    <string name="default_wallpaper_component">com.android.gummybeam/.GummyBeamWallpaper</string>
 
     <!-- Boolean indicating if current platform supports quick switch-on/off of
          Bluetooth Module -->

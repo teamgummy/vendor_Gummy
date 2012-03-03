@@ -25,7 +25,7 @@
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
     <!-- Adding default wallpaper - Kejar31 -->
-    <string name="default_wallpaper_component">@null</string>
+    <string name="default_wallpaper_component">com.android.gummybeam/.GummyBeamWallpaper</string>
 
     <!-- Default color for notification LED. -->
     <color name="config_defaultNotificationColor">#ff13b4f0</color>
