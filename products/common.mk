@@ -13,6 +13,7 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     FileManager \
     LibertySettings \
+    AppWidgetPicker \
     Superuser \
     Superuser.apk \
     su
@@ -24,6 +25,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     VisualizationWallpapers \
     PhaseBeam \
+    GummyBeam \
     HoloSpiralWallpaper \
     NoiseField \
     MagicSmokeWallpapers \
