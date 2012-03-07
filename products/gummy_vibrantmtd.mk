@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/fascinatemtd/full_vibrantmtd.mk)
+$(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 $(call inherit-product, vendor/Gummy/products/common_phone.mk)
 
