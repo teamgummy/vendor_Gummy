@@ -15,6 +15,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="google/soju/crespo:4.0.3/IML74K/239410:user/release-keys" \
     PRIVATE_BUILD_DESC="soju-user 4.0.3 IML74K 239410 release-keys"
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=TeamGummy \
+    ro.goo.rom=Gummy-TARGA \
+    ro.goo.version=0.8.0
+
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
 
