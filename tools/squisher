@@ -1,7 +1,6 @@
 #!/bin/sh
 #
-# Squish a CM otapackage for distribution
-# cyanogen
+#Squish a Gummy otapackage for distribution
 #
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
@@ -86,6 +85,7 @@ rm -rf $REPACK/ota/system/app/*.old
 rm -rf $REPACK/ota/system/framework/send_bug.jar
 rm -rf $REPACK/ota/system/app/Provision.apk
 rm -rf $REPACK/ota/system/app/WAPPushManager.apk
+rm -rf $REPACK/ota/system/app/Home.apk
 
 
 # Strip modules
