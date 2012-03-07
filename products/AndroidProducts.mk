@@ -4,4 +4,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gummy_wingray.mk \
     $(LOCAL_DIR)/gummy_crespo4g.mk \
     $(LOCAL_DIR)/gummy_crespo.mk \
-    $(LOCAL_DIR)/gummy_targa.mk
+    $(LOCAL_DIR)/gummy_targa.mk \
+    $(LOCAL_DIR)/gummy_spyder.mk
