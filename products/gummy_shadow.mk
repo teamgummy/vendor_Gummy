@@ -11,19 +11,20 @@ PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shadow_vzw \
     BUILD_ID=IML74K \
-    BUILD_DISPLAY_ID=Gummy-shadow \
+    BUILD_DISPLAY_ID=Gummy-SHADOW \
     BUILD_FINGERPRINT="google/soju/crespo:4.0.3/IML74K/239410:user/release-keys" \
     PRIVATE_BUILD_DESC="soju-user 4.0.3 IML74K 239410 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-shadow \
+    ro.goo.rom=Gummy-SHADOW \
     ro.goo.version=0.8.0
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
-#PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/shadow
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/shadow
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/gsm
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
 

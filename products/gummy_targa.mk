@@ -23,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common_qHD
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/targa
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/lte
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
