@@ -27,4 +27,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/shadow
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/gsm
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
-
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/moto_camera
