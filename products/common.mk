@@ -36,8 +36,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf \
-    Torch
+    audio_effects.conf 
+
 
 # init.d support
 PRODUCT_COPY_FILES += \
