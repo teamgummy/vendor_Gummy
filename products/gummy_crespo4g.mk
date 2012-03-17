@@ -18,7 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
     ro.goo.rom=Gummy-CRESPO4G \
-    ro.goo.version=0.8.0 
+    ro.goo.version=0.9.0 
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
