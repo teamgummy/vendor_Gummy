@@ -70,11 +70,24 @@ rm -rf $REPACK/ota/recovery
 rm -rf $REPACK/ota/system/app/*.old
 
 # remove send_bug.jar 
+printf "Removing unwanted files..."
+echo
 rm -rf $REPACK/ota/system/framework/send_bug.jar
 rm -rf $REPACK/ota/system/app/Provision.apk
 rm -rf $REPACK/ota/system/app/WAPPushManager.apk
 rm -rf $REPACK/ota/system/app/Home.apk
 
+# if this is a toro build we want to copy a few enhansed audio ui elements over becouse stock has extremly low volume for whatever reason on these devices
+if [ "$TARGET_PRODUCT" = "Gummy_toro" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_maguro" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
 
 # Strip modules
 [ -d $REPACK/ota/system/lib/modules ] && \
