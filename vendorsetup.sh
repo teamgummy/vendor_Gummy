@@ -6,4 +6,5 @@ add_lunch_combo Gummy_wingray-userdebug
 add_lunch_combo Gummy_targa-userdebug
 add_lunch_combo Gummy_spyder-userdebug
 add_lunch_combo Gummy_shadow-userdebug
+add_lunch_combo Gummy_droid2-userdebug
 add_lunch_combo Gummy_droid2we-userdebug
