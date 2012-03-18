@@ -26,5 +26,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/galaxysmtd
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/gsm
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/3g
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
