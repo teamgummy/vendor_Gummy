@@ -1,4 +1,4 @@
-$(call inherit-product, device/motorola/shadow/device_shadow.mk)
+$(call inherit-product, device/motorola/shadow/shadow.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 $(call inherit-product, vendor/Gummy/products/common_phone.mk)
 
