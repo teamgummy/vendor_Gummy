@@ -1,4 +1,4 @@
-$(call inherit-product, device/motorola/droid2we/device_droid2we.mk)
+$(call inherit-product, device/motorola/droid2we/droid2we.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 $(call inherit-product, vendor/Gummy/products/common_phone.mk)
 
@@ -27,4 +27,3 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/droid2we
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/3g
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/moto_camera
