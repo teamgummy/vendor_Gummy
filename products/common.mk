@@ -54,7 +54,8 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk
+    vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
+    vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk
 
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
