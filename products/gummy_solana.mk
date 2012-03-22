@@ -1,4 +1,4 @@
-$(call inherit-product, device/motorola/maserati/device_solana.mk)
+$(call inherit-product, device/motorola/solana/device_solana.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 $(call inherit-product, vendor/Gummy/products/common_phone.mk)
 
@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common_qHD
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/solana
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/3g
 
 
