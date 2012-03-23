@@ -25,6 +25,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common_qHD
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/spyder
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/lte
 
 
