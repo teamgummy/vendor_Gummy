@@ -3,7 +3,9 @@ add_lunch_combo Gummy_maguro-userdebug
 add_lunch_combo Gummy_crespo-userdebug
 add_lunch_combo Gummy_crespo4g-userdebug
 add_lunch_combo Gummy_fascinatemtd-userdebug
+add_lunch_combo Gummy_showcasemtd-userdebug
 add_lunch_combo Gummy_captivatemtd-userdebug
+add_lunch_combo Gummy_mesmerizemtd-userdebug
 add_lunch_combo Gummy_vibrantmtd-userdebug
 add_lunch_combo Gummy_galaxysmtd-userdebug
 add_lunch_combo Gummy_wingray-userdebug
