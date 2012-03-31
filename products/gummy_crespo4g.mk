@@ -10,7 +10,7 @@ PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=sojus \
-    BUILD_ID=IML74K \
+    BUILD_ID=IMM76D \
     BUILD_DISPLAY_ID=Gummy-CRESPO4G \
     BUILD_FINGERPRINT="google/sojus/crespo4g:2.3.7/GWK74/185293:user/release-keys" \
     PRIVATE_BUILD_DESC="sojus-user 2.3.7 GWK74 185293 release-keys"
