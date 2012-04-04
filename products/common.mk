@@ -98,6 +98,10 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
     vendor/Gummy/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
     vendor/Gummy/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
+	
+# Adding bootanimation audio
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3
 
 # Added xbin files
 PRODUCT_COPY_FILES += \
