@@ -22,9 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=0.9.0 
 
 PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
+    vendor/Gummy/prebuilt/mesmerizemtd/Mms.apk:system/app/Mms.apk
+    vendor/Gummy/prebuilt/mesmerizemtd/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/showcasemtd
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/fascinatemtd
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
 
