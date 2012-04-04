@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=0.9.0
 
 PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
+    vendor/Gummy/prebuilt/QHD/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common_qHD
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/maserati
