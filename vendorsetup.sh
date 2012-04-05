@@ -1,8 +1,12 @@
-add_lunch_combo Gummy_targa-userdebug
-add_lunch_combo Gummy_spyder-userdebug
-add_lunch_combo Gummy_solana-userdebug
-add_lunch_combo Gummy_maserati-userdebug
-add_lunch_combo Gummy_shadow-userdebug
-add_lunch_combo Gummy_droid2-userdebug
-add_lunch_combo Gummy_droid2we-userdebug
-
+add_lunch_combo Gummy_toro-userdebug
+add_lunch_combo Gummy_maguro-userdebug
+add_lunch_combo Gummy_crespo-userdebug
+add_lunch_combo Gummy_crespo4g-userdebug
+add_lunch_combo Gummy_fascinatemtd-userdebug
+add_lunch_combo Gummy_showcasemtd-userdebug
+add_lunch_combo Gummy_captivatemtd-userdebug
+add_lunch_combo Gummy_mesmerizemtd-userdebug
+add_lunch_combo Gummy_vibrantmtd-userdebug
+add_lunch_combo Gummy_galaxysmtd-userdebug
+add_lunch_combo Gummy_p999-userdebug
+add_lunch_combo Gummy_wingray-userdebug

@@ -135,7 +135,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.setupwizard.enterprise_mode=1 \
-    ro.modversion=Gummy \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180
