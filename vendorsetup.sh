@@ -8,5 +8,4 @@ add_lunch_combo Gummy_captivatemtd-userdebug
 add_lunch_combo Gummy_mesmerizemtd-userdebug
 add_lunch_combo Gummy_vibrantmtd-userdebug
 add_lunch_combo Gummy_galaxysmtd-userdebug
-add_lunch_combo Gummy_p999-userdebug
 add_lunch_combo Gummy_wingray-userdebug
