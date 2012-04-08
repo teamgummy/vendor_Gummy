@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=0.9.0 
 
 PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/mesmerizemtd/boot_audio.mp3:system/media/boot_audio.mp3 \
     vendor/Gummy/prebuilt/mesmerizemtd/Mms.apk:system/app/Mms.apk \
     vendor/Gummy/prebuilt/mesmerizemtd/bootanimation.zip:system/media/bootanimation.zip
 

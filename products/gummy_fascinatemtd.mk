@@ -22,7 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=0.9.0 
 
 PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/crespo/bootanimation.zip:system/media/bootanimation.zip
+    vendor/Gummy/prebuilt/fascinatemtd/boot_audio.mp3:system/media/boot_audio.mp3 \
+    vendor/Gummy/prebuilt/fascinatemtd/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/fascinatemtd
