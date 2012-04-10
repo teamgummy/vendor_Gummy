@@ -17,7 +17,5 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Adding default wallpaper - Kejar31 -->
-    <!--<string name="default_wallpaper_component">com.android.gummybeam/.GummyBeamWallpaper</string>-->
 
 </resources>

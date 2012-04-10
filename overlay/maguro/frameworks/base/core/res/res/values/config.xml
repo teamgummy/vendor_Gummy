@@ -24,9 +24,6 @@
     <!-- The restoring is handled by modem if it is true -->
     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
 
-    <!-- Adding default wallpaper - Kejar31 -->
-    <!--<string name="default_wallpaper_component">com.android.gummybeam/.GummyBeamWallpaper</string>-->
-
     <!-- Default color for notification LED. -->
     <color name="config_defaultNotificationColor">#ff00bbff</color>
 

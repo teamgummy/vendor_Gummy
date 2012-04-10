@@ -18,8 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-SHOWCASEMTD \
-    ro.goo.version=0.9.0 
+    ro.goo.rom=Gummy-SHOWCASEMTD 
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/mesmerizemtd/boot_audio.mp3:system/media/boot_audio.mp3 \

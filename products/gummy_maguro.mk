@@ -24,9 +24,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-MAGURO \
-    ro.goo.version=0.9.0 
-
+    ro.goo.rom=Gummy-MAGURO 
+	
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
     vendor/Gummy/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip

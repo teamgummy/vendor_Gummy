@@ -17,8 +17,7 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Boolean indicating if current platform supports quick switch-on/off of
-         Bluetooth Module -->
-    <bool name="config_bluetooth_adapter_quick_switch">false</bool>
+    <!-- Adding default wallpaper - Kejar31 -->
+    <string name="default_wallpaper_component">com.android.gummybeam/.GummyBeamWallpaper</string>
 
 </resources>
