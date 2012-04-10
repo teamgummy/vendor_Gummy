@@ -16,8 +16,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-P999 \
-    ro.goo.version=0.9.5 \
+    ro.goo.rom=Gummy-P999 
     ro.cm.version=9.0.0-gummy
 
 

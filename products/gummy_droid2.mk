@@ -17,8 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-DROID2 \
-    ro.goo.version=0.9.0
+    ro.goo.rom=Gummy-DROID2 
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/Non-QHD/bootanimation.zip:system/media/bootanimation.zip

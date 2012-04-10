@@ -17,13 +17,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-MASERATIE \
-    ro.goo.version=0.9.0
+    ro.goo.rom=Gummy-MASERATIE 
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/QHD/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common_qHD
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/qHD
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/maserati
 
 
