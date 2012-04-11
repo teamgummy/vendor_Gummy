@@ -60,7 +60,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \	
     vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
     vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk \
-	vendor/Gummy/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk 
+    vendor/Gummy/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
+    vendor/Gummy/prebuilt/common/etc/.root_browser:system/etc/.root_browser
 
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
