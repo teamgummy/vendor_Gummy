@@ -54,8 +54,13 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
+
+	# Propiortary applications
+PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
-    vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk
+    vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk \
+    vendor/Gummy/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
+    vendor/Gummy/prebuilt/common/etc/.root_browser:system/etc/.root_browser
 
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
@@ -117,7 +122,7 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/xbin/sysro:system/xbin/sysro \
     vendor/Gummy/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/Gummy/prebuilt/common/xbin/zip:system/xbin/zip \
-    vendor/Gummy/prebuilt/common/xbin/zipalign:system/xbin/zipalign \
+    vendor/Gummy/prebuilt/common/xbin/zipalign:system/xbin/zipalign 
 
 
 # Enable SIP+VoIP on all targets
