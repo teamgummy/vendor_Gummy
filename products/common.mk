@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit 
 	
 # Propiortary applications
-PRODUCT_COPY_FILES += \	
+PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
     vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk \
     vendor/Gummy/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
