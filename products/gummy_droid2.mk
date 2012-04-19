@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=droid2_vzw \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-DROID2 \
+    BUILD_DISPLAY_ID=Gummy-DROID2-1.0.1 \
     BUILD_FINGERPRINT="google/soju/crespo:4.0.3/IML74K/239410:user/release-keys" \
     PRIVATE_BUILD_DESC="soju-user 4.0.3 IML74K 239410 release-keys"
 
