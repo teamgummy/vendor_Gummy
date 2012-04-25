@@ -4,7 +4,7 @@ $(call inherit-product, vendor/Gummy/products/common.mk)
 PRODUCT_NAME := Gummy_otter
 PRODUCT_BRAND := Android
 PRODUCT_DEVICE := otter
-PRODUCT_MODEL := Kindle Fire
+PRODUCT_MODEL := Amazon Kindle Fire
 PRODUCT_MANUFACTURER := Amazon
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
