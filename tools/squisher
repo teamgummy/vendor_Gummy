@@ -129,6 +129,30 @@ if [ "$TARGET_PRODUCT" = "Gummy_crespo4g" ]; then
     cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
 fi
 
+#This Kindle Fire requres some funks stuff... thanks hashcode :P
+if [ "$TARGET_PRODUCT" = "Gummy_otter" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+    # Fix Libraries
+    mv $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so.old
+    mv $REPACK/ota/system/lib/hw/hwcomposer.default.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so
+    mv $REPACK/ota/system/lib/hw/camera.omap4.so $REPACK/ota/system/lib/hw/camera.omap4.so.bak
+    # Remove unwanted apps
+    rm $REPACK/ota/system/app/Camera.apk
+    # Fix build.prop
+    $SED -i \
+        -e '/ro\.kernel\.android\.checkjni/d' \
+        -e '/ro\.build\.type/s/eng/user/' \
+        $REPACK/ota/system/build.prop
+    # Delete unnecessary binaries
+    ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
+    # No need for recovery
+    rm -rf $REPACK/ota/recovery
+    # Strip modules
+    [ -d $REPACK/ota/system/lib/modules ] && \
+        find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+fi
 
 # Strip modules
 [ -d $REPACK/ota/system/lib/modules ] && \
