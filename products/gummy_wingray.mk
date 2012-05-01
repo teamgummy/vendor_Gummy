@@ -17,8 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
-    vendor/Gummy/prebuilt/wingray/bootanimation.zip:system/media/bootanimation.zip
+    vendor/Gummy/prebuilt/tab10/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/wingray
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 
