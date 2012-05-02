@@ -1,4 +1,4 @@
-$(call inherit-product, device/moto/wingray/full_stingray.mk)
+$(call inherit-product, device/moto/stingray/full_stingray.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 
 PRODUCT_NAME := Gummy_stingray
