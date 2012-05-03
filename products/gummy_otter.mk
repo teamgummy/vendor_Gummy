@@ -23,4 +23,5 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/tab7/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
 

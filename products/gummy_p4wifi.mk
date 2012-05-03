@@ -24,3 +24,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/p4-common
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/no_led
