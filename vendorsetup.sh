@@ -11,5 +11,6 @@ add_lunch_combo Gummy_showcasemtd-userdebug
 add_lunch_combo Gummy_stingray-userdebug
 add_lunch_combo Gummy_tf201-userdebug
 add_lunch_combo Gummy_toro-userdebug
+add_lunch_combo Gummy_toroplus-userdebug
 add_lunch_combo Gummy_vibrantmtd-userdebug
 add_lunch_combo Gummy_wingray-userdebug

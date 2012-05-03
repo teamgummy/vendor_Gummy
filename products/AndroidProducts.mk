@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gummy_toro.mk \
+	    $(LOCAL_DIR)/gummy_toroplus.mk \
     $(LOCAL_DIR)/gummy_maguro.mk \
     $(LOCAL_DIR)/gummy_wingray.mk \
     $(LOCAL_DIR)/gummy_stingray.mk \
