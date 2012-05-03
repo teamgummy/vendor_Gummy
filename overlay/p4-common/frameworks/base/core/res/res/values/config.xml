@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2011, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+
+    <!-- This device is not "voice capable"; it's data-only. -->
+    <bool name="config_voice_capable">false</bool>
+
+    <bool name="config_showNavigationBar">false</bool>
+
+    <bool name="config_batterySdCardAccessibility">true</bool>
+
+    <bool name="config_sf_limitedAlpha">true</bool>
+ 
+   <bool name="config_allowAllRotations">true</bool>
+
+   <bool name="config_sf_slowBlur">true</bool>
+
+    <bool name="config_automatic_brightness_available">true</bool>
+
+    <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
+         The N entries of this array define N  1 zones as follows:
+
+         Zone 0:        0 <= LUX < array[0]
+         Zone 1:        array[0] <= LUX < array[1]
+         ...
+         Zone N:        array[N - 1] <= LUX < array[N]
+         Zone N + 1     array[N] <= LUX < infinity
+
+         Must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLevels">
+         <item>10</item>
+         <item>25</item>
+         <item>50</item>
+         <item>100</item>
+         <item>150</item>
+         <item>200</item>
+         <item>700</item>
+         <item>1300</item>
+         <item>2000</item>
+         <item>3000</item>
+         <item>4000</item>
+         <item>5000</item>
+         <item>6000</item>
+         <item>7000</item>
+         <item>8000</item>
+         <item>9000</item>
+    </integer-array>
+
+    <!-- Array of output values for LCD backlight corresponding to the LUX values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+         <item>32</item>
+         <item>32</item>
+         <item>32</item>
+         <item>32</item>
+         <item>64</item>
+         <item>64</item>
+         <item>95</item>
+         <item>95</item>
+         <item>122</item>
+         <item>149</item>
+         <item>176</item>
+         <item>197</item>
+         <item>228</item>
+         <item>255</item>
+         <item>255</item>
+         <item>255</item>
+         <item>255</item>
+    </integer-array>
+
+    <!-- Array of output values for button backlight corresponding to the LUX values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- Minimum screen brightness allowed by the power manager. -->
+    <integer name="config_screenBrightnessDim">10</integer>
+
+    <string-array translatable="false" name="config_tether_usb_regexs">
+	<item>"rndis0"</item>
+    </string-array>
+    <string-array translatable="false" name="config_tether_bluetooth_regexs">
+        <item>"bnep\\d"</item>
+    </string-array>
+
+   <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
+    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
+
+   <!-- Boolean indicating whether the wifi chipset has background scan support -->
+   <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
+
+    <string name="config_networkLocationProvider">com.google.android.location.NetworkLocationProvider</string>
+
+   <string name="config_geocodeProvider">com.google.android.location.GeocodeProvider</string>
+
+    <bool name="config_forceDisableHardwareKeyboard">true</bool>
+</resources>

@@ -9,6 +9,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gummy_captivatemtd.mk \
     $(LOCAL_DIR)/gummy_mesmerizemtd.mk \
     $(LOCAL_DIR)/gummy_otter.mk \
+    $(LOCAL_DIR)/gummy_p4wifi.mk \
     $(LOCAL_DIR)/gummy_showcasemtd.mk \
     $(LOCAL_DIR)/gummy_tf201.mk \
     $(LOCAL_DIR)/gummy_galaxysmtd.mk \
