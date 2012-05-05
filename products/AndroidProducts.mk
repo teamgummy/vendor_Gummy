@@ -16,3 +16,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gummy_tf201.mk \
     $(LOCAL_DIR)/gummy_galaxysmtd.mk \
     $(LOCAL_DIR)/gummy_crespo.mk 
+    $(LOCAL_DIR)/gummy_epicmtd.mk 
