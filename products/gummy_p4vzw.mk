@@ -1,22 +1,22 @@
-$(call inherit-product, device/samsung/p4/p4.mk)
+$(call inherit-product, device/samsung/p4vzw/p4vzw.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 
-PRODUCT_NAME := Gummy_p4
+PRODUCT_NAME := Gummy_p4vzw
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := p4
-PRODUCT_MODEL := GT-P7500
+PRODUCT_MODEL := SCH-I905
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=GT-P7500 \
+    PRODUCT_NAME=SCH-I905 \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-p4wifi
+    BUILD_DISPLAY_ID=Gummy-p4vzw
 	
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=samsung/GT-P7500/GT-P7500:3.2/HTJ85B/UEKMM:user/release-keys PRIVATE_BUILD_DESC="GT-P7500-user 3.2 HTJ85B UEKMM release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I905 BUILD_ID=IML74K BUILD_FINGERPRINT=samsung/SCH-I905/SCH-I905:3.1/HMJ37/EH04:user/release-keys PRIVATE_BUILD_DESC="SCH-I905-user 3.1 HMJ37 EH04 release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamGummy \
-    ro.goo.rom=Gummy-p4
+    ro.goo.rom=Gummy-p4vzw
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \

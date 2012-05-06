@@ -12,6 +12,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gummy_otter.mk \
     $(LOCAL_DIR)/gummy_p4wifi.mk \
     $(LOCAL_DIR)/gummy_p4.mk \
+    $(LOCAL_DIR)/gummy_p4vzw.mk \
+    $(LOCAL_DIR)/gummy_p4tmo.mk \
     $(LOCAL_DIR)/gummy_showcasemtd.mk \
     $(LOCAL_DIR)/gummy_tf101.mk \
     $(LOCAL_DIR)/gummy_tf201.mk \
