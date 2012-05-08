@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf 
 
+# T-Mobile theme engine
+include vendor/Gummy/products/themes_common.mk
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
