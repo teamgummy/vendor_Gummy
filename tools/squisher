@@ -133,6 +133,11 @@ if [ "$TARGET_PRODUCT" = "Gummy_crespo4g" ]; then
     echo
     cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
 fi
+if [ "$TARGET_PRODUCT" = "Gummy_tf101" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
 if [ "$TARGET_PRODUCT" = "Gummy_tf201" ]; then
     printf "Coping device specific files..."
     echo
