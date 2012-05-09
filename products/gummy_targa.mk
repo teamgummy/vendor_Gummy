@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER := Motorola
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=targa_vzw \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-TARGA \
+    BUILD_DISPLAY_ID=Gummy-TARGA-1.2.0 \
     BUILD_FINGERPRINT="google/soju/crespo:4.0.3/IML74K/239410:user/release-keys" \
     PRIVATE_BUILD_DESC="soju-user 4.0.3 IML74K 239410 release-keys"
 

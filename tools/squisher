@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#Squish a Gummy otapackage for distribution
+# Squish a Gummy otapackage for distribution
 #
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
@@ -82,19 +82,107 @@ rm -rf $REPACK/ota/recovery
 rm -rf $REPACK/ota/system/app/*.old
 
 # remove send_bug.jar 
+printf "Removing unwanted files..."
+echo
 rm -rf $REPACK/ota/system/framework/send_bug.jar
 rm -rf $REPACK/ota/system/app/Provision.apk
 rm -rf $REPACK/ota/system/app/WAPPushManager.apk
 rm -rf $REPACK/ota/system/app/Home.apk
 
+# if this is a samsung build we want to copy a few enhansed audio ui elements over becouse stock has an extremly low volume for whatever reason on these devices
+if [ "$TARGET_PRODUCT" = "Gummy_toro" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_toroplus" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_maguro" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_fascinatemtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_showcasemtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_captivatemtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_mesmerizemtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_vibrantmtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_galaxysmtd" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_crespo" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_crespo4g" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_tf101" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+if [ "$TARGET_PRODUCT" = "Gummy_tf201" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+fi
+#This Kindle Fire requres some funks stuff... thanks hashcode :P
+if [ "$TARGET_PRODUCT" = "Gummy_otter" ]; then
+    printf "Coping device specific files..."
+    echo
+    cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
+    # Fix Libraries
+    mv $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so.old
+    mv $REPACK/ota/system/lib/hw/hwcomposer.default.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so
+    mv $REPACK/ota/system/lib/hw/camera.omap4.so $REPACK/ota/system/lib/hw/camera.omap4.so.bak
+    # Remove unwanted apps
+    rm $REPACK/ota/system/app/Camera.apk
+    # Fix build.prop
+    $SED -i \
+        -e '/ro\.kernel\.android\.checkjni/d' \
+        -e '/ro\.build\.type/s/eng/user/' \
+        $REPACK/ota/system/build.prop
+    # Delete unnecessary binaries
+    ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
+    # No need for recovery
+    rm -rf $REPACK/ota/recovery
+    # Strip modules
+    [ -d $REPACK/ota/system/lib/modules ] && \
+        find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+fi
 
 # Strip modules
 [ -d $REPACK/ota/system/lib/modules ] && \
 	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
-
-# Copy libvoicesearch as it's getting messed up in the build
-cp -f $ANDROID_BUILD_TOP/device/motorola/targa/prebuilt/lib/libvoicesearch.so $REPACK/ota/system/lib/libvoicesearch.so
-
 
 # Determine what to name the new signed package
 REALDATE=`date +%F-%H_%M`

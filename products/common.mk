@@ -12,7 +12,6 @@ PRODUCT_PACKAGES := \
     Gallery \
     SoundRecorder \
     FileManager \
-    LibertySettings \
     AppWidgetPicker \
     Superuser \
     Superuser.apk \
@@ -38,6 +37,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf 
 
+# T-Mobile theme engine
+include vendor/Gummy/products/themes_common.mk
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -54,9 +55,9 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
     vendor/Gummy/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit 
-	
-# Propiortary applications
+    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
+
+	# Propiortary applications
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
     vendor/Gummy/prebuilt/common/app/RomToolbox.apk:system/app/RomToolbox.apk \
@@ -143,7 +144,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
-    ro.goo.version=101
+    ro.goo.version=120
 
 
 
