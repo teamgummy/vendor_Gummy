@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=mysid \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-TORO \
+    BUILD_DISPLAY_ID=Gummy-TORO-1.2.0 \
     BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys" \
     PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys"
 

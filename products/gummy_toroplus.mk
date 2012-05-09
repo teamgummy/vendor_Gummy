@@ -11,7 +11,7 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=mysidspr \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-TOROPLUS \
+    BUILD_DISPLAY_ID=Gummy-TOROPLUS-1.2.0 \
     BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.0.4/IMM76I/330937:user/release-keys" \
     PRIVATE_BUILD_DESC="mysidspr-user 4.0.4 IMM76I 330937 release-keys"
 
