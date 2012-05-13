@@ -12,6 +12,7 @@ PRODUCT_PACKAGES := \
     Gallery \
     SoundRecorder \
     FileManager \
+    Spearmint \
     AppWidgetPicker \
     Superuser \
     Superuser.apk \
