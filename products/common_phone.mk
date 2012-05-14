@@ -5,7 +5,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Cesium.ogg \
 
 PRODUCT_PACKAGES += \
-   Stk \
-   Bubble \
-   Spearmint 
+   Stk 
 
