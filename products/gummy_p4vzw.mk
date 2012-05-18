@@ -3,7 +3,7 @@ $(call inherit-product, vendor/Gummy/products/common.mk)
 
 PRODUCT_NAME := Gummy_p4vzw
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := p4
+PRODUCT_DEVICE := p4vzw
 PRODUCT_MODEL := SCH-I905
 PRODUCT_MANUFACTURER := samsung
 
