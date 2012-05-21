@@ -14,6 +14,7 @@ PRODUCT_PACKAGES := \
     FileManager \
     Bubble \
     Cherry \
+    Grape \
     Spearmint \
     AppWidgetPicker \
     Superuser \
