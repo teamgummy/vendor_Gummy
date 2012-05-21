@@ -13,6 +13,7 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     FileManager \
     Bubble \
+    Cherry \
     Spearmint \
     AppWidgetPicker \
     Superuser \
