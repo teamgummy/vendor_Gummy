@@ -92,7 +92,7 @@ PRODUCT_COPY_FILES += \
 # Term binarry for support for market updates
 PRODUCT_COPY_FILES +=  \
     vendor/Gummy/proprietary/Term.apk:system/app/Term.apk \
-    vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so 
+    vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so 
 
 # Term info for nano support
 PRODUCT_COPY_FILES += \
@@ -148,7 +148,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
-    ro.goo.version=120
+    ro.goo.version=123
 
 
 
