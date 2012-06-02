@@ -10,7 +10,7 @@ PRODUCT_MANUFACTURER := Amazon
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=otter \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-OTTER-1.2.0 \
+    BUILD_DISPLAY_ID=Gummy-OTTER-1.2.6 \
     BUILD_FINGERPRINT="motorola/tervigon/wingray:4.0.3/IML77/239789:user/release-keys" \
     PRIVATE_BUILD_DESC="tervigon-user 4.0.3 IML77 239789 release-keys"
 
