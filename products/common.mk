@@ -15,6 +15,7 @@ PRODUCT_PACKAGES := \
     Bubble \
     Cherry \
     Grape \
+    Orange \
     Spearmint \
     AppWidgetPicker \
     Superuser \
