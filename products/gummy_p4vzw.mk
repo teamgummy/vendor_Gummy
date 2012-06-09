@@ -1,5 +1,6 @@
 $(call inherit-product, device/samsung/p4vzw/p4vzw.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
+$(call inherit-product, vendor/Gummy/products/gummy_themes.mk)
 
 PRODUCT_NAME := Gummy_p4vzw
 PRODUCT_BRAND := samsung

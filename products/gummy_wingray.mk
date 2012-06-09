@@ -1,5 +1,6 @@
 $(call inherit-product, device/moto/wingray/full_wingray.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
+$(call inherit-product, vendor/Gummy/products/gummy_themes.mk)
 
 PRODUCT_NAME := Gummy_wingray
 PRODUCT_BRAND := google

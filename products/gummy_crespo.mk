@@ -1,6 +1,7 @@
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
 $(call inherit-product, vendor/Gummy/products/common_phone.mk)
+$(call inherit-product, vendor/Gummy/products/gummy_themes.mk)
 
 PRODUCT_NAME := Gummy_crespo
 PRODUCT_BRAND := google

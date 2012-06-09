@@ -1,5 +1,6 @@
 $(call inherit-product, device/moto/stingray/full_stingray.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
+$(call inherit-product, vendor/Gummy/products/gummy_themes.mk)
 
 PRODUCT_NAME := Gummy_stingray
 PRODUCT_BRAND := verizon

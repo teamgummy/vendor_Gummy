@@ -1,5 +1,6 @@
 $(call inherit-product, device/asus/tf101/full_tf101.mk)
 $(call inherit-product, vendor/Gummy/products/common.mk)
+$(call inherit-product, vendor/Gummy/products/gummy_themes.mk)
 
 PRODUCT_NAME := Gummy_tf101
 PRODUCT_BRAND := asus
