@@ -23,7 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/mesmerizemtd/boot_audio.mp3:system/media/boot_audio.mp3 \
-    vendor/Gummy/prebuilt/mesmerizemtd/Mms.apk:system/app/Mms.apk \
     vendor/Gummy/prebuilt/mesmerizemtd/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
