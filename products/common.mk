@@ -140,7 +140,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
-    ro.goo.version=126
+    ro.goo.version=130
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_DISPLAY_ID=Gummy-1.3.0
 
 
 

@@ -10,7 +10,6 @@ PRODUCT_MANUFACTURER := Motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Gummy-STINGRAY-1.2.6 \
     BUILD_FINGERPRINT="verizon/trygon/stingray:3.2.4/HLK75F/221360:user/release-keys" \
     PRIVATE_BUILD_DESC="trygon-user 3.2.4 HLK75F 221360 release-keys"
 
