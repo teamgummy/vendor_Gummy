@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/gummy_settings_title"
+    android:key="gummy_settings"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceScreen
+            android:key="about_settings"
+            android:title="@string/about_gummy"
+            android:icon="@drawable/ic_settings_performance"
+            android:fragment="com.android.settings.About" />
+
+    <PreferenceScreen
+            android:key="general_settings"
+            android:title="@string/general_settings"
+            android:icon="@drawable/gummy_gen_tweaks"
+            android:fragment="com.android.settings.GeneralSettings" />
+
+    <PreferenceScreen
+            android:key="systemui_tweaks"
+            android:title="@string/systemui_tweaks"
+            android:icon="@drawable/gummy_sysui_tweaks"
+            android:fragment="com.android.settings.SystemUITweaks" />
+
+    <PreferenceScreen
+            android:key="softkey_settings"
+            android:title="@string/softkey_settings"
+            android:icon="@drawable/gummy_softkeys"
+            android:fragment="com.android.settings.Navbar" />
+
+    <PreferenceScreen
+            android:key="power_widgets"
+            android:title="@string/power_widgets"
+            android:icon="@drawable/gummy_pw"
+            android:fragment="com.android.settings.PowerWidget" />
+
+    <PreferenceScreen
+            android:key="lockscreen_styles"
+            android:title="@string/lockscreen_styles"
+            android:icon="@drawable/gummy_lock_styles"
+            android:fragment="com.android.settings.LockscreenStyles" />
+
+    <PreferenceScreen
+            android:key="lockscreen_settings"
+            android:title="@string/lockscreen_settings"
+            android:icon="@drawable/gummy_lockscreen"
+            android:fragment="com.android.settings.LockscreenSettings" />
+			
+    <PreferenceScreen
+           android:key="lockscreen_weather"
+           android:title="@string/lockscreen_weather_title"
+           android:icon="@drawable/gummy_weather"
+           android:fragment="com.android.settings.cyanogenmod.Weather" />
+
+    <PreferenceScreen
+            android:key="led_settings"
+            android:title="@string/led_settings"
+            android:icon="@drawable/gummy_led"
+            android:fragment="com.android.settings.LEDSettings" />
+
+    <PreferenceScreen
+        android:key="themes_settings"
+        android:icon="@drawable/ic_settings_themes"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="device_settings"
+        android:icon="@drawable/ic_settings_advanced"
+        android:title="@string/device_settings_title">
+        <intent
+            android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
+            android:targetPackage="com.cyanogenmod.settings.device"
+            android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
+    </PreferenceScreen>
+	
+    <PreferenceScreen
+            android:key="performance_settings"
+            android:title="@string/performance_settings"
+            android:icon="@drawable/gummy_performance"
+            android:fragment="com.android.settings.Performance" />
+
+</PreferenceScreen>

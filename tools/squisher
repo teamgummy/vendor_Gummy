@@ -161,6 +161,7 @@ if [ "$TARGET_PRODUCT" = "Gummy_otter" ]; then
     echo
     cp -rf $ANDROID_BUILD_TOP/vendor/Gummy/prebuilt/toro/audio/ui $REPACK/ota/system/media/audio
     # Fix Libraries
+    mv $REPACK/ota/system/vendor/lib/hw/hwcomposer.otter.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.otter.so.old
     mv $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so.old
     mv $REPACK/ota/system/lib/hw/hwcomposer.default.so $REPACK/ota/system/vendor/lib/hw/hwcomposer.omap4.so
     mv $REPACK/ota/system/lib/hw/camera.omap4.so $REPACK/ota/system/lib/hw/camera.omap4.so.bak
