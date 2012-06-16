@@ -12,14 +12,6 @@ PRODUCT_PACKAGES := \
     Gallery \
     SoundRecorder \
     FileManager \
-<<<<<<< HEAD
-    Bubble \
-    Cherry \
-    Grape \
-    Orange \
-    Spearmint \
-=======
->>>>>>> ac53ecf2af04c6a0b49d11e3e3af159a2c299beb
     AppWidgetPicker \
     Superuser \
     Superuser.apk \
