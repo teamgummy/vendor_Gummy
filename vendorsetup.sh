@@ -2,3 +2,4 @@ add_lunch_combo Gummy_shadow-userdebug
 add_lunch_combo Gummy_droid2-userdebug
 add_lunch_combo Gummy_droid2we-userdebug
 add_lunch_combo Gummy_venus2-userdebug
+add_lunch_combo Gummy_daytona-userdebug
