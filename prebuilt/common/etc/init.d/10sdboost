@@ -1,4 +1,4 @@
-#!/system/xbin/bash
+#!/system/bin/sh
 : '
  ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
  
@@ -18,8 +18,9 @@
  =====================================================================
 ' 
 
-. /system/etc/liberty.cfg
+. /system/etc/init.d.cfg
 
-if busybox [ -e /sys/devices/virtual/bdi/179:0/read_ahead_kb -a $SD_BOOST_AT_BOOT -eq 1 ]; then
-	busybox echo $READ_AHEAD_KB > /sys/devices/virtual/bdi/179:0/read_ahead_kb
+if $sd_boost && busybox [ -e $read_ahead_file ]
+then
+	busybox echo $read_ahead_kb > $read_ahead_file
 fi

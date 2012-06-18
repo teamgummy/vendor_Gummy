@@ -1,4 +1,4 @@
-#!/system/xbin/bash
+#!/system/bin/sh
 : '
  ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
  
@@ -18,8 +18,9 @@
  =====================================================================
 '
 
-. /system/etc/liberty.cfg
+. /system/etc/init.d.cfg
 
-if busybox [ $ENABLE_SYSCTL -eq 1 -a -f /system/etc/sysctl.conf ]; then
-	sysctl -p /system/etc/sysctl.conf
+if $enable_sysctl && busybox [ -e $sysctl_conf ]
+then
+	sysctl -p $sysctl_conf
 fi

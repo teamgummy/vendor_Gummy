@@ -1,7 +1,8 @@
-#!/system/xbin/sh
-# imoseyon mods
+#!/system/bin/sh
 
-# file system speedups
-busybox mount -o remount,noatime,barrier=0,nobh /system
-busybox mount -o remount,noatime /data
-busybox mount -o remount,noatime,barrier=0,nobh /cache
+if $file_system_speedups
+then
+	busybox mount -o remount,noatime,barrier=0,nobh /system
+	busybox mount -o remount,noatime /data
+	busybox mount -o remount,noatime,barrier=0,nobh /cache
+fi

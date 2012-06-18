@@ -2,7 +2,8 @@
 
 . /system/etc/cron/cron.conf
 
-if test $WEEKLY_DROP_CACHES -eq 1; then
+if $weekly_drop_caches
+then
 	sync
 	echo 3 > /proc/sys/vm/drop_caches
 fi

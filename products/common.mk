@@ -52,10 +52,11 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/Gummy/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
     vendor/Gummy/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/Gummy/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
-    vendor/Gummy/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/Gummy/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/Gummy/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg \
     vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
+	vendor/Gummy/prebuilt/common/xbin/roottools.sh:system/xbin/roottools.sh
 
 	# Propiortary applications
 PRODUCT_COPY_FILES += \

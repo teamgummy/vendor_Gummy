@@ -2,6 +2,7 @@
 
 . /system/etc/cron/cron.conf
 
-if test $DAILY_CLEAR_CACHE -eq 1; then
-	cache -rmdata
+if $daily_clear_data_cache
+then
+	busybox find /data/data -type d -iname "*cache*" -maxdepth 2 -mindepth 2 -exec busybox rm -rf {} ';'
 fi

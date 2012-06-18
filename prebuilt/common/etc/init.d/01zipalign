@@ -1,4 +1,4 @@
-#!/system/xbin/bash
+#!/system/bin/sh
 : '
  ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
  
@@ -16,11 +16,12 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
  =====================================================================
-' 
+'
 
-. /system/etc/liberty.cfg
-. /system/etc/liberty.bsh
+. /system/etc/init.d.cfg
+. $script_helpers
 
-if busybox [ $ZIPALIGN_AT_BOOT -eq 1 ]; then
+if $zipalign_apks
+then
 	zipalign_apks
 fi

@@ -18,9 +18,10 @@
  =====================================================================
 ' 
 
-. /system/etc/liberty.cfg
-. /system/etc/liberty.bsh
+. /system/etc/init.d.cfg
+. $script_helpers
 
-if busybox [ $FIX_PERMISSIONS_AT_BOOT -eq 1 ]; then
+if $fix_permissions
+then
 	fix_permissions
 fi
