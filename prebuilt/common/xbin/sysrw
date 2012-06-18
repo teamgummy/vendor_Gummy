@@ -1,4 +1,0 @@
-#!/system/bin/sh
-
-busybox mount -o remount,rw /system
-echo "System mounted read/write"

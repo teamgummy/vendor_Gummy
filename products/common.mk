@@ -54,8 +54,7 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
     vendor/Gummy/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/Gummy/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg \
-	vendor/Gummy/prebuilt/common/xbin/roottools.sh:system/xbin/roottools.sh
+    vendor/Gummy/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
 
 	# Propiortary applications
 PRODUCT_COPY_FILES += \
@@ -108,20 +107,8 @@ PRODUCT_COPY_FILES += \
 
 # Added xbin files
 PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/common/xbin/backup:system/xbin/backup \
-    vendor/Gummy/prebuilt/common/xbin/bash:system/xbin/bash \
-    vendor/Gummy/prebuilt/common/xbin/btool:system/xbin/btool \
-    vendor/Gummy/prebuilt/common/xbin/drm1_func_test:system/xbin/drm1_func_test \
-    vendor/Gummy/prebuilt/common/xbin/gdb:system/xbin/gdb \
-    vendor/Gummy/prebuilt/common/xbin/gdbserver:system/xbin/gdbserver \
-    vendor/Gummy/prebuilt/common/xbin/market_history:system/xbin/market_history \
     vendor/Gummy/prebuilt/common/xbin/nano:system/xbin/nano \
-    vendor/Gummy/prebuilt/common/xbin/rm_apks:system/xbin/rm_apks \
-    vendor/Gummy/prebuilt/common/xbin/run_backup:system/xbin/run_backup \
-    vendor/Gummy/prebuilt/common/xbin/run_restore:system/xbin/run_restore \
-    vendor/Gummy/prebuilt/common/xbin/ssmgrd:system/xbin/ssmgrd \
-    vendor/Gummy/prebuilt/common/xbin/sysro:system/xbin/sysro \
-    vendor/Gummy/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
+	vendor/Gummy/prebuilt/common/xbin/roottools.sh:system/xbin/roottools.sh \
     vendor/Gummy/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/Gummy/prebuilt/common/xbin/zipalign:system/xbin/zipalign 
 
