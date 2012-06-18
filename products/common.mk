@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/xbin/backup:system/xbin/backup \
     vendor/Gummy/prebuilt/common/xbin/bash:system/xbin/bash \
     vendor/Gummy/prebuilt/common/xbin/btool:system/xbin/btool \
-    vendor/Gummy/prebuilt/common/xbin/busybox:system/xbin/busybox \
     vendor/Gummy/prebuilt/common/xbin/drm1_func_test:system/xbin/drm1_func_test \
     vendor/Gummy/prebuilt/common/xbin/gdb:system/xbin/gdb \
     vendor/Gummy/prebuilt/common/xbin/gdbserver:system/xbin/gdbserver \
