@@ -55,7 +55,6 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
     vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Gummy/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg \
-    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
 	vendor/Gummy/prebuilt/common/xbin/roottools.sh:system/xbin/roottools.sh
 
 	# Propiortary applications
